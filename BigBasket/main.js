@@ -706,7 +706,7 @@ var subproductInfo = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "url", function() { return url; });
 var url = {
-    Imageuri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.comemployee/upload",
+    Imageuri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.com/employee/upload",
     Registeruri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.com/employee/register",
     Exceluri: "http://localhost:1234/product/upload",
     localImageuri: "http://localhost:1234/adminProducts/imageUpload",
