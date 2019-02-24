@@ -922,7 +922,7 @@ var AuthInterceptor = /** @class */ (function () {
     AuthInterceptor.prototype.intercept = function (req, next) {
         var idToken = localStorage.getItem('id_token');
         console.log(idToken);
-        if (idToken) {
+        if (idToken != '-1' && idToken != null) {
             var clonereq = req.clone({
                 headers: req.headers.set("Authorization", "Bearer " + idToken)
             });
