@@ -706,8 +706,8 @@ var subproductInfo = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "url", function() { return url; });
 var url = {
-    Imageuri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.com/employee/upload",
-    Registeruri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.com/employee/register",
+    Imageuri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.com:1234/employee/upload",
+    Registeruri: "http://ec2-52-66-237-250.ap-south-1.compute.amazonaws.com:1234/employee/register",
     Exceluri: "http://localhost:1234/product/upload",
     localImageuri: "http://localhost:1234/adminProducts/imageUpload",
     localRegisteruri: "http://localhost:1234/employee/register",
@@ -1230,6 +1230,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./header/header.component */ "./src/app/modules/employeeModule/header/header.component.ts");
 /* harmony import */ var _login_employeeloginservice_dologin__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./login/employeeloginservice/dologin */ "./src/app/modules/employeeModule/login/employeeloginservice/dologin.ts");
 /* harmony import */ var _product_card_product_card_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./product-card/product-card.component */ "./src/app/modules/employeeModule/product-card/product-card.component.ts");
+/* harmony import */ var _selected_category_selected_category_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./selected-category/selected-category.component */ "./src/app/modules/employeeModule/selected-category/selected-category.component.ts");
+
 
 
 
@@ -1264,7 +1266,8 @@ var EmployeeModule = /** @class */ (function () {
                 _login_login_component__WEBPACK_IMPORTED_MODULE_6__["loginComponent"],
                 _userPlan_userPlan_component__WEBPACK_IMPORTED_MODULE_11__["userPlanComponent"], _pageNotFound_error_component__WEBPACK_IMPORTED_MODULE_12__["errorComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_13__["dashboardComponent"], _vendorcategory_vendorCategory__WEBPACK_IMPORTED_MODULE_14__["vendorCategory"],
                 _header_header_component__WEBPACK_IMPORTED_MODULE_20__["employeeheaderComponent"],
-                _product_card_product_card_component__WEBPACK_IMPORTED_MODULE_22__["ProductCardComponent"]
+                _product_card_product_card_component__WEBPACK_IMPORTED_MODULE_22__["ProductCardComponent"],
+                _selected_category_selected_category_component__WEBPACK_IMPORTED_MODULE_23__["SelectedCategoryComponent"]
             ],
             imports: [
                 _sharedModule_sharedModule__WEBPACK_IMPORTED_MODULE_19__["SharedModule"],
@@ -1625,6 +1628,62 @@ var ProductCardComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/modules/employeeModule/selected-category/selected-category.component.css":
+/*!******************************************************************************************!*\
+  !*** ./src/app/modules/employeeModule/selected-category/selected-category.component.css ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL21vZHVsZXMvZW1wbG95ZWVNb2R1bGUvc2VsZWN0ZWQtY2F0ZWdvcnkvc2VsZWN0ZWQtY2F0ZWdvcnkuY29tcG9uZW50LmNzcyJ9 */"
+
+/***/ }),
+
+/***/ "./src/app/modules/employeeModule/selected-category/selected-category.component.html":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/modules/employeeModule/selected-category/selected-category.component.html ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  selected-category works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/modules/employeeModule/selected-category/selected-category.component.ts":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/modules/employeeModule/selected-category/selected-category.component.ts ***!
+  \*****************************************************************************************/
+/*! exports provided: SelectedCategoryComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SelectedCategoryComponent", function() { return SelectedCategoryComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var SelectedCategoryComponent = /** @class */ (function () {
+    function SelectedCategoryComponent() {
+    }
+    SelectedCategoryComponent.prototype.ngOnInit = function () {
+    };
+    SelectedCategoryComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-selected-category',
+            template: __webpack_require__(/*! ./selected-category.component.html */ "./src/app/modules/employeeModule/selected-category/selected-category.component.html"),
+            styles: [__webpack_require__(/*! ./selected-category.component.css */ "./src/app/modules/employeeModule/selected-category/selected-category.component.css")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], SelectedCategoryComponent);
+    return SelectedCategoryComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/modules/employeeModule/signup/dateValidation.ts":
 /*!*****************************************************************!*\
   !*** ./src/app/modules/employeeModule/signup/dateValidation.ts ***!
@@ -1966,8 +2025,6 @@ var signupComponent = /** @class */ (function () {
         var _this = this;
         this.keepGoing = true;
         this.count = 1;
-        console.log("i m running");
-        console.log(data.imageUrls);
         data.imageUrls.forEach(function (obj) {
             var _loop_1 = function (superkey) {
                 documentsArray.imageUrls.forEach(function (element) {
@@ -1975,7 +2032,6 @@ var signupComponent = /** @class */ (function () {
                         if (obj[superkey] != null) {
                             if (key == superkey) {
                                 _this.uploadProgress[superkey] = false;
-                                console.log(superkey, key);
                                 _this.matchedUploadEntry++;
                                 if (superkey != "policeVerification" && superkey != "cancelCheque" && superkey != 'addressProof') {
                                     if (_this.checkConditionNull(element[key])) {
@@ -2001,7 +2057,6 @@ var signupComponent = /** @class */ (function () {
         var _this = this;
         this.keepGoing = true;
         this.count = 1;
-        console.log(data.mobile_no);
         if (data.mobile_no == this.userform.get('mobile_no').value) {
             if (this.checkConditionNull(documentsArray.mobile_no)) {
                 this.matchedUploadEntry++;
@@ -2020,7 +2075,6 @@ var signupComponent = /** @class */ (function () {
         var documentsArray = _model_documentsValidation__WEBPACK_IMPORTED_MODULE_12__["documentArray"].documentsArray;
         this.imageUpload.uploadFile(this.formdata).subscribe(function (data) {
             _this.matchedUploadEntry = 0;
-            console.log("ill run");
             if (data.id != null && data.imageUrls != null) {
                 _this.uniqueid = data.id;
                 _this.filesurl = data.imageUrls;
